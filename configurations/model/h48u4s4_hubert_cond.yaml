@@ -1,0 +1,32 @@
+# @package model
+model: phonetic_aware_demucs # either demucs or dwave
+demucs:
+  chin: 1
+  chout: 1
+  hidden: 48
+  max_hidden: 10000
+  causal: False
+  glu: true
+  depth: 5
+  kernel_size: 8
+  stride: 4
+  normalize: true
+  resample: 4
+  growth: 2
+  rescale: 0.1
+
+feature_config:
+  include_ft: False
+  feature_model: 'hubert'
+  state_dict_path: '/cs/labs/adiyoss/shared/pretrained_weights/hubert/hubert_base_ls960.pt'
+  features_factor: 0.01
+  features_dim: 768  # 512 for ASR, 768 for hubert
+  get_ft_after_lstm: False
+  use_as_conditioning: True
+  merge_method: 'inter'
+  features_dim_for_conditioning: 768
+  use_as_supervision: False
+  supervision_factor: 0.1
+  layers: [6]
+#  layers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  learnable: True

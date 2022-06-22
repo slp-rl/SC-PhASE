@@ -9,7 +9,8 @@ import sys
 parser = argparse.ArgumentParser()
 parser.add_argument("--project_dir")
 parser.add_argument("--dataset_base_dir")
-parser.add_argument("--include_debug", default=False, type=bool, required=False)
+parser.add_argument("--include_debug", default=True, type=bool, required=False)
+parser.add_argument("--spk", default=28, type=int, required=False)
 args = parser.parse_args()
 
 
@@ -58,8 +59,8 @@ def find_audio_files(path, exts=[".wav"], progress=True, poi:list=None):
 
 
 if __name__ == "__main__":
-    train_clean, val_clean = find_audio_files(f"{args.dataset_base_dir}/clean_trainset_28spk_wav", poi=['p286', 'p287'])
-    train_noisy, val_noisy = find_audio_files(f"{args.dataset_base_dir}/noisy_trainset_28spk_wav", poi=['p286', 'p287'])
+    train_clean, val_clean = find_audio_files(f"{args.dataset_base_dir}/clean_trainset_{args.spk}spk_wav", poi=['p286', 'p287'])
+    train_noisy, val_noisy = find_audio_files(f"{args.dataset_base_dir}/noisy_trainset_{args.spk}spk_wav", poi=['p286', 'p287'])
     test_noisy = find_audio_files(f"{args.dataset_base_dir}/noisy_testset_wav")
     test_clean = find_audio_files(f"{args.dataset_base_dir}/clean_testset_wav")
 

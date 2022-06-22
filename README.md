@@ -4,7 +4,7 @@ paper published @ Interspeech2022.
 
 ## Paper
 [A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement](put link)<br>
-[Or Tal](link to scholar), [Moshe Mandel](link to linkedin), [Felix Kreuk](https://scholar.google.co.il/citations?user=UiERcYsAAAAJ&hl=en), [Yossi Adi](https://scholar.google.co.il/citations?user=4W-HuYYAAAAJ&hl=en)<br>
+[Or Tal](link to scholar), [Moshe Mandel](https://www.linkedin.com/in/moshemandel/), [Felix Kreuk](https://scholar.google.co.il/citations?user=UiERcYsAAAAJ&hl=en), [Yossi Adi](https://scholar.google.co.il/citations?user=4W-HuYYAAAAJ&hl=en)<br>
 [23rd INTERSPEECH conference](https://interspeech2022.org/)<br>
 Audio samples could be found in our [Project Page](put link)<br>
 <br> 

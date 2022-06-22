@@ -39,7 +39,6 @@ If you find this implementation useful please consider citing our work:
 Add paper citation here
 ```
 
----
 ## Usage
 
 ### Clone the repository

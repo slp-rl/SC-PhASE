@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement">
+
+  <meta property="og:title" content="A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement"/>
+  <meta property="og:description" content="We present DeepSIM, a generative model for conditional image shape manipulation based on a single training image."/>
+  <meta property="og:url" content="http://www.vision.huji.ac.il/deepsim/"/>
+  <meta property="og:image" content="static/images/og_tag_header_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement">
+  <meta name="twitter:description" content="We present DeepSIM, a generative model for conditional image shape manipulation based on a single training image.">
+  <meta name="twitter:image" content="static/images/twitter_tag_header_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="DeepSIM, GAN, cGAN, image-to-image-translation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/tal-or" target="_blank">Or Tal</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/moshemandel/" target="_blank">Moshe Mandel</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/felix-kreuk-033589b0/" target="_blank">Felix Kreuk</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/yossi-adi-31a32858/" target="_blank">Yossi Adi</a><sup>1,2</sup>,
+            </span>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">The Hebrew University of Jerusalem, Israel<sup>1</sup>
+              <br>Meta AI Research <sup>2</sup><br>Interspeech 2022
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2007.01289.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+<!--                &lt;!&ndash; SM Link. &ndash;&gt;-->
+<!--                <span class="link-block">-->
+<!--                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Supplementary</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/eliahuhorwitz/DeepSIM" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                    </a>
+                  </span>
+                  <!-- ArXiv Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2007.01289" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+
+
+
+              <!-- TODO Add dataset link -->
+              <!-- TODO Add replicate link -->
+              <!-- TODO Add colab link -->
+              <!-- Colab Link. -->
+            <!--   <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Colab</span>
+                </a>
+              </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Video Teaser-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        <source src="static/videos/tree_header.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        <strong>DeepSIM:</strong> Given a <em>single</em> real training image (b) and a corresponding primitive representation (a), our model learns to map between the primitive (a) to the target image (b). At inference, the original primitive (a) is manipulated by the user. Then, the manipulated primitive is passed through the network which outputs a corresponding manipulated image (e) in the real image domain.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Speech enhancement has seen great improvement in recent years using end-to-end neural networks.
+            However, most models are agnostic to the spoken phonetic content. Recently, several studies suggested
+            phonetic-aware speech enhancement, mostly using perceptual supervision.
+            Yet, injecting phonetic features during model optimization can take additional forms (e.g., model conditioning).
+            In this paper, we conduct a systematic comparison between different methods of incorporating phonetic
+            information in a speech enhancement model. By conducting a series of controlled experiments, we observe the
+            influence of different phonetic content models as well as various feature-injection techniques on enhancement
+            performance, considering both causal and non-causal models.
+            Specifically, we evaluate three settings for injecting phonetic information, namely: i) feature conditioning;
+            ii) perceptual supervision; and iii) regularization. Phonetic features are obtained using an intermediate
+            layer of either a supervised pre-trained Automatic Speech Recognition (ASR) model or by using a pre-trained
+            Self-Supervised Learning (SSL) model. We further observe the effect of choosing different embedding layers on
+            performance, considering both manual and learned configurations. Results suggest that using a SSL model as
+            phonetic features outperforms the ASR one in most cases. Interestingly, the conditioning setting performs
+            best among the evaluated configurations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h1 class="title has-text-centered">Phonetic Features Injection</h1>
+          <img src="static/images/Phonetic.excalidraw.png" alt="main table"/>
+          <h2 class="subtitle has-text-left">
+            Consider a phonetic feature vector as an embedded representation of a speech signal which captures its
+            content and intents.<br>One may then conclude that using some of the information held within this representation
+            could benefit speech enhancement as it shares prior information regarding the content of the signal.
+            <br>In this work, we explore three modeling settings to inject phonetic information into a speech enhancement
+            model, namely Regularization, Supervision, and Conditioning.
+          </h2>
+        </div>
+        <div class="item">
+          <h1 class="title has-text-centered">Regularization</h1>
+          <img src="static/images/Reg.png" alt="main table"/>
+          <h2 class="subtitle has-text-left">
+            Extract feature vectors from a given noisy signal input using a pretrained phonetic features representation model.
+            <br>Then, apply a regularization loss with the latent representation of the speech enhancement model.
+          </h2>
+        </div>
+        <div class="item">
+          <h1 class="title has-text-centered">Supervision</h1>
+          <img src="static/images/supervision.png" alt="bird"/>
+          <h2 class="subtitle has-text-left">
+            Pass the noisy input signal through the speech enhancement model and output an estimated clean speech signal.
+            <br>Then, extract feature vectors from both clean signal and estimated clean signal using a pretrained phonetic
+            features representation model.<br>Last, compute a metric loss between the extracted representations.
+         </h2>
+        </div>
+        <div class="item">
+          <h1 class="title has-text-centered">Conditioning</h1>
+          <img src="static/images/cond.excalidraw.png" alt="bird"/>
+          <h2 class="subtitle has-text-left">
+            Extract feature vectors from a given noisy signal input using a pretrained phonetic features representation model.
+            <br>Then, perform a linear interpolation over the channels dimension to match the latent vector dimensionality and concatenate
+            <br>Last, concatenate the interpolated features and latent vectors, pass them through a linear projection layer and feed the result to the Decoder.
+            <br>There is no additional loss term under this setting.
+         </h2>
+        </div>
+        <div class="item">
+          <h1 class="title has-text-centered">Illustration of all methods</h1>
+          <img src="static/images/Architechture.png" alt="bird"/>
+          <h2 class="subtitle has-text-left">
+            An illustration of all phonetic features injection methods, used over a UNet-like architecture.
+         </h2>
+       </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">ICCV Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+
+<!--          <div class="publication-video">-->
+<!--            <iframe src="https://www.youtube.com/embed/RZwnnttQYzs?rel=0&amp;showinfo=0"-->
+<!--            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash;/ Paper video. &ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Single Image Animation</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-woman">-->
+<!--          <video poster="" id="woman" autoplay controls muted loop height="100%">-->
+<!--            <source src="static/videos/woman.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-eyes">-->
+<!--          <video poster="" id="eyes" autoplay controls muted loop height="100%">-->
+<!--            <source src="static/videos/eyes.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-star-tp">-->
+<!--          <video poster="" id="star-tp" autoplay controls muted loop height="100%">-->
+<!--            <source src="static/videos/star.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper poster -->
+
+      <h2 class="title">Audio Table</h2>
+      <p>
+        This should be a table of audio files to explore.
+        Could we do an interactive portion here? everything I've checked requires a server side.
+      </p>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper poster -->
+
+      <h2 class="title">Interspeech Poster</h2>
+
+      <iframe  src="static/pdfs/poster.pdf" width="100%" height="550">
+          </iframe>
+        <!--/ Paper poster -->
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@InProceedings{Vinker_2021_ICCV,
+        author    = {Vinker, Yael and Horwitz, Eliahu and Zabari, Nir and Hoshen, Yedid},
+        title     = {Image Shape Manipulation From a Single Augmented Training Sample},
+        booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+        month     = {October},
+        year      = {2021},
+        pages     = {13769-13778}
+      }</code></pre>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+<!-- Default Statcounter code for DeepSIM
+  http://www.vision.huji.ac.il/deepsim/ -->
+  <script type="text/javascript">
+    var sc_project=12351448;
+    var sc_invisible=1;
+    var sc_security="c676de4f";
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12351448/0/c676de4f/1/"
+    alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

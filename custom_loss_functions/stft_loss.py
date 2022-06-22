@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
+# LICENSE-META.txt file in the root directory of this source tree.
 
 # Original copyright 2019 Tomoki Hayashi
 #  MIT License (https://opensource.org/licenses/MIT)

@@ -2,8 +2,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-
+# LICENSE-MIT.txt file in the root directory of this source tree.
 import json
 import logging
 import math
@@ -25,6 +24,8 @@ logger = logging.getLogger(__name__)
 
 
 class Audioset:
+    # This source code is licensed under the license found in the
+    # LICENSE-META.txt file in the root directory of this source tree.
     def __init__(self, files=None, length=None, stride=None,
                  pad=True, with_path=False, sample_rate=None,
                  channels=None, convert=False):
@@ -140,6 +141,8 @@ def match_files(noisy, clean, matching="sort"):
 
 
 class NoisyCleanSet:
+    # This source code is licensed under the license found in the
+    # LICENSE-META.txt file in the root directory of this source tree.
     def __init__(self, json_dir, matching="sort", length=None, stride=None,
                  pad=True, sample_rate=None, with_path=False):
         """__init__.

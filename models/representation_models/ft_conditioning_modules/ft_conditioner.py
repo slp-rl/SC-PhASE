@@ -1,5 +1,5 @@
-import logging
-
+# This source code is licensed under the license found in the
+# LICENSE-MIT.txt file in the root directory of this source tree.
 import torch
 import torch.nn as nn
 import torchaudio.transforms

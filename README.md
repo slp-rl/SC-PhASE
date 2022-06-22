@@ -1,4 +1,4 @@
-# A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement @interspeech2022
+# A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement  (PhaSE)  @interspeech2022
 This is a PyTorch implementation of the pipeline presented in [A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement](put link) 
 paper published @Interspeech2022.
 

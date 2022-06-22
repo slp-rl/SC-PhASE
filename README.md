@@ -33,6 +33,7 @@ Interestingly, the conditioning setting performs best among the evaluated config
 
 ![Pipeline overview](img/Architechture.png)
 <br><br>
+## Cite
 If you find this implementation useful please consider citing our work:
 ```
 Add paper citation here

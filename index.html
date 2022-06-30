@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" type="text/css" href="static/css/dropdown_style.css">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -299,13 +300,265 @@
     <div class="container">
       <!-- Paper poster -->
 
-      <h2 class="title">Audio Table</h2>
-      <p>
-        This should be a table of audio files to explore.
-        Could we do an interactive portion here? everything I've checked requires a server side.
-      </p>
+      <h2 class="title">Audio Examples</h2>
+<!--      <div class="container">-->
+<!--        <div class="dropdown">-->
+<!--          <input type="text" class="textBox" placeholder="Choose Session" readonly>-->
+<!--          <div class="option">-->
+<!--            <div onclick="show('s1')" onchange="record(this)">s1</div>-->
+<!--            <div onclick="show('s2')">s2</div>-->
+<!--            <div onclick="show('s3')">s3</div>-->
+<!--          </div>-->
+<!--          <script>-->
+<!--            function show(anything){-->
+<!--              document.querySelector('.textBox').value = anything;-->
+<!--            }-->
+
+<!--            let dropdown = document.querySelector('.dropdown');-->
+<!--            dropdown.onclick = function(){-->
+<!--              dropdown.classList.toggle('active');-->
+<!--            }-->
+<!--          </script>-->
+<!--        </div>-->
+<!--      </div>-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <br>
+      <br>
+      <h2 class="subtitle">Session: s1</h2>
+      <div class="content-container">
+          <style>
+          table, th, td {
+            border: 0;
+            /*border-collapse: collapse;*/
+          }
+          th, td {
+              padding: 15px;
+              /*text-align: center;*/
+              /*vertical-align: center;*/
+          }
+          </style>
+          <table>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Clean</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Noisy</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Regularization</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Supervision</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-6</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-9</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Learned</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Baseline</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <br>
+      <br>
+      <h2 class="subtitle">Session: s2</h2>
+      <div class="content-container">
+          <br>
+          <style>
+          table, th, td {
+            border: 0;
+            /*border-collapse: collapse;*/
+          }
+          th, td {
+              padding: 15px;
+              /*text-align: center;*/
+              /*vertical-align: center;*/
+          }
+          </style>
+          <table>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Clean</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Noisy</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Regularization</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Supervision</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-6</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-9</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Learned</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Baseline</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <br>
+      <br>
+      <h2 class="subtitle">Session: s3</h2>
+      <div class="content-container">
+          <br>
+          <style>
+          table, th, td {
+            border: 0;
+            /*border-collapse: collapse;*/
+          }
+          /*th, td {*/
+          /*    padding: 15px;*/
+          /*    text-align: center;*/
+          /*}*/
+          </style>
+          <table>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Clean</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Noisy</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Regularization</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Supervision</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+              <tr>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-6</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Layer-9</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Cond: Learned</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <th style="text-align: right; vertical-align: middle">Baseline</th>
+                  <td>
+                      <audio controls style="width: 150px;">
+                        <source  src=debug_audio/657.wav type="audio/wav">
+                            Your browser does not support the audio element.
+                      </audio>
+                  </td>
+              </tr>
+          </table>
       </div>
     </div>
+  </div>
 
 </section>
 

@@ -36,7 +36,12 @@ Interestingly, the conditioning setting performs best among the evaluated config
 ## Cite
 If you find this implementation useful please consider citing our work:
 ```
-Add paper citation here
+@article{tal2022systematic,
+  title={A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement},
+  author={Tal, Or and Mandel, Moshe and Kreuk, Felix and Adi, Yossi},
+  journal={arXiv preprint arXiv:2206.11000},
+  year={2022}
+}
 ```
 
 ## Usage

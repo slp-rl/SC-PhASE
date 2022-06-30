@@ -6,7 +6,7 @@ paper published @ Interspeech2022.
 [A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement](https://arxiv.org/abs/2206.11000) <br>
 [Or Tal](https://www.linkedin.com/in/tal-or/) , [Moshe Mandel](https://www.linkedin.com/in/moshemandel/) , [Felix Kreuk](https://scholar.google.co.il/citations?user=UiERcYsAAAAJ&hl=en) , [Yossi Adi](https://scholar.google.co.il/citations?user=4W-HuYYAAAAJ&hl=en) <br>
 [23rd INTERSPEECH conference](https://interspeech2022.org/) <br>
-Audio samples could be found in our [Project Page](put link) <br>
+Audio samples could be found in our [Project Page](https://pages.cs.huji.ac.il/adiyoss-lab/SC_PhASE/) <br>
 <br> 
 Speech enhancement has seen great improvement in recent
 years using end-to-end neural networks. However, most models are agnostic to the spoken phonetic content. <br> 

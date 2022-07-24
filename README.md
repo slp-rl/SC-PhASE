@@ -29,7 +29,7 @@ considering both manual and learned configurations.
 Results suggest that using a SSL model as phonetic features outperforms the ASR one
 in most cases. 
 Interestingly, the conditioning setting performs best among the evaluated configurations.
-[Paper](put link).<br><br>
+[Paper](https://arxiv.org/abs/2206.11000).<br><br>
 
 ![Pipeline overview](img/Architechture.png)
 <br><br>

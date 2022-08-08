@@ -1,6 +1,7 @@
 # A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement @ Interspeech2022
 This is a PyTorch implementation of the pipeline presented in [A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement](https://arxiv.org/abs/2206.11000) 
-paper published @ Interspeech2022.
+paper published @ Interspeech2022.\\
+[Project page](https://pages.cs.huji.ac.il/adiyoss-lab/SC_PhASE/)
 
 ## Abstract
 [A Systematic Comparison of Phonetic Aware Techniques for Speech Enhancement](https://arxiv.org/abs/2206.11000) <br>
